@@ -15,3 +15,11 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 6. Create long table with all samples concentrated in one table (df_long_table)
 7. Create pooled table by merging all mouse_ID together and calculate mean log2_enrichment and in how many samples each variant is present
 8. Save all the tables
+
+## Script for plots
+1. Coparison between input and samples
+- Histogram with am propurtion with Hue = Sample
+- ECDF with samples and input
+- Venn2 Input vs mean proportion in sample
+
+2. 
