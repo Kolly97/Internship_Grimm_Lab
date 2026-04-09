@@ -17,22 +17,38 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 8. Save all the tables
 
 ## Script for plots
-1. Coparison between input and samples
+1. Comparison between input and samples regarding proportion
 - Histogram with am propurtion with Hue = Sample
 - ECDF with samples and input
 - Venn2 Input vs mean proportion in sample
 
+2. Comparison between biological replicates in enrichment
+- ECDF plot
 
+3. Comparison functional selection between RNA and DNA samples
+- Violin plot mean between biological replicate
+- KDE plot for liver and heart (DNA and RNA in one plot, x = enrichment, y = n variant)
+- Venn2 plot with top 10000 enrichment
+    - to show already the selection difference between biological step and tissue
+- Diagramm of Venn2 plot overlap between top 1 and top 10^6
+
+4. Plots for enrichment between DNA to RNA?
+- ask Sabrina if she thinks this is relevant
+
+5. Validation of reproducibility between biological and technical replicates
+
+6. AA position specific log2_enrichment
+- maybe
 
 ## Script for technical replicates
 1. Create lists
 2. Load tables
-   - raw library
-   - technical replicates
-   - long table with biological replicates
+- raw library
+- technical replicates
+- long table with biological replicates
 3. Load, translate and remove AA_seq with stop_codon from samples
-    - with old read out script
-    - save raw AA tables
+- with old read out script
+- save raw AA tables
 4. Create tissue and gDNA/cDNA specific input library with frameshift +1
 5. Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
 6. Create long table of technical replicates and combine with biological replicates
