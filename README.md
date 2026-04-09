@@ -22,4 +22,18 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 - ECDF with samples and input
 - Venn2 Input vs mean proportion in sample
 
-2. 
+
+
+## Script for technical replicates
+1. Create lists
+2. Load tables
+   - raw library
+   - technical replicates
+   - long table with biological replicates
+3. Load, translate and remove AA_seq with stop_codon from samples
+    - with old read out script
+    - save raw AA tables
+4. Create tissue and gDNA/cDNA specific input library with frameshift +1
+5. Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
+6. Create long table of technical replicates and combine with biological replicates
+7. Save technical replicates and long table with biological and technical replicates
