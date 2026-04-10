@@ -18,9 +18,10 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 ## Script for plots
 1. Comparison between input and samples regarding proportion
-- Histogram with am propurtion with Hue = Sample
+- Histogram with am propurtion with Hue = Sample **DONE**
 - ECDF with samples and input
-- Venn2 Input vs mean proportion in sample
+- Venn2 Input vs mean proportion in sample **Done**
+    - df_pooled umschreiben, damit ich auch pooled proportion habe **Done**
 
 2. Comparison between biological replicates in enrichment
 - ECDF plot
@@ -52,4 +53,5 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 4. Create tissue and gDNA/cDNA specific input library with frameshift +1
 5. Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
 6. Create long table of technical replicates and combine with biological replicates
+- Add column 'replicate' to mark if sample is a biological or technical replicate
 7. Save technical replicates and long table with biological and technical replicates
