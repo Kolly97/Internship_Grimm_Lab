@@ -20,8 +20,8 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 1. Comparison between input and samples regarding proportion
 - Histogram with am propurtion with Hue = Sample **DONE**
 - ECDF with samples and input
-- Venn2 Input vs mean proportion in sample **Done**
-    - df_pooled umschreiben, damit ich auch pooled proportion habe **Done**
+- Venn2 Input vs mean proportion in sample **DONE**
+    - df_pooled umschreiben, damit ich auch pooled proportion habe **DONE**
 
 2. Comparison between biological replicates in enrichment
 - ECDF plot
