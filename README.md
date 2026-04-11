@@ -41,7 +41,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 6. AA position specific log2_enrichment
 - maybe
 
-## Script for technical replicates
+## Script for technical replicates **DONE**
 1. Create lists
 2. Load tables
 - raw library
@@ -54,4 +54,5 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 5. Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
 6. Create long table of technical replicates and combine with biological replicates
 - Add column 'replicate' to mark if sample is a biological or technical replicate
+      - change replicate to Replicate
 7. Save technical replicates and long table with biological and technical replicates
