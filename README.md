@@ -82,18 +82,87 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
    
 
 7. [ ] AA position specific log2_enrichment
-    -[ ] maybe
+    - [ ] maybe
 
 ## Writing the Report
 1. [x] Title page
-2. [ ] Abstract
+   
+3. [ ] Abstract
    - [ ] First draft
+         
+4. [ ] Table of Content
+   - [x] Created
+         
+5. [ ] Abbreviation
+    - [x] Created
+          
 3. [ ] Introduction
+   - [ ] Create structure
    - [ ] First draft
-4. [x] Materials & Methods
-    - [!] d
-    - [-] ss
-    - [~] sd
-    - [?] sf
-    - [ ]  
+   - [ ] Send first draft of Introduction to Sabrina
+   - [ ] First draft of Aims of Introductions
+   - [ ] Revise your text using Sabrina's suggestions
+   - [ ] Send first draft of Aims to Sabrina
+   - [ ] Revise Aims using Sabrina's suggestions
+         
+4. [ ] Materials & Methods
+    - [x] Created chapters
+    - [x] Created Devices table
+    - [x] Created Software table
+    - [x] Created Kits table
+    - [x] Created Consumables table
+    - [x] Created Reagents table
+    - [x] Created cells table
+    - [x] Created Enzymes table
+    - [x] Created Buffers table
+    - [x] Create tables for PCR and cDNA synthesis process 
+    - [x] First draft of text
+    - [ ] Send first draft of M&M to Sabrina
+    - [ ] Revise M&M using Sabrina's suggestions
 
+5. [ ] Results
+    - [ ] Create Plots (See *Script for Plots*)
+    - [ ] Create figure captions
+        - [ ] Figure caption chapter *proportion*
+        - [ ] Figure caption chapter *log2_enrichment*
+        - [ ] Figure caption chapter *Comparison functional selection between RNA and DNA samples*
+        - [ ] Figure caption chapter *biological vs technical replicates*
+        - [ ] Figure caption chapter *log2_enrichment from gDNA to cDNA*
+    - [ ] Send plots to Sabrina
+    - [ ] Discuss plots with Sabrina
+    - [ ] Write first draft for Results
+        - [ ] Chapter *proportion*
+        - [ ] Chapter *log2_enrichment*
+        - [ ] Chapter *Comparison functional selection between RNA and DNA samples*
+        - [ ] Chapter *biological vs technical replicates*
+        - [ ] Chapter *log2_enrichment from gDNA to cDNA*
+
+7. [ ] Discussion
+    - [ ] Collect first ideas and bulletpoints for discussion
+    - [ ] Connect statements I want to make
+
+## Progress Log 
+
+### 2026-04-12
+- [x] Create script for ECDF plot of proportion and Log2_enrichment
+- [x] Change input library from extraction and tissue specific to only tissue specific
+- [x] Re-calculate all samples of biological replicates
+- [x] Calculate new Log2_enrichment from gDNA to cDNA for df_long_all_samples
+      - Makes it possible to evaluate, which variants are especially good for transcription in cell
+- [x] Create pivot table for AA_seq with proportion and enrichment both for gDNA and cDNA
+- [x] recalculate technical replicates with liver spec input library instead of just raw library
+- [x] Create new long table with all biological and technical replicates
+
+### 2026-04-10
+- [x]  Histogram proportion distribution with hue = mouse_id
+- [x]  Venn2 figure for proportion chapter
+- [ ]  
+
+
+
+
+### Emojis:
+[x] = done
+⏳ = in progress
+⚠️ = needs review
+❓ = open question
