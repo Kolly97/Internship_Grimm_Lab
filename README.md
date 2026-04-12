@@ -10,11 +10,12 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 1. load csv tables
 2. translate Peptides -> AA_seq 
 3. create list of all variants which are present in all samples in the same tissue and extraction type
-4. create tissue and extraction specific library with frameshift (+1) and calculate proportion
-5. add all tissue and extraction typical variants to sample, add frameshift (sum(count_sample)/sum(count_library)) and calculate proportion, cumulative proportion and log2_enrichment
-6. Create long table with all samples concentrated in one table (df_long_table)
-7. Create pooled table by merging all mouse_ID together and calculate mean log2_enrichment and in how many samples each variant is present
-8. Save all the tables
+   - Discussion. Why not merge cDNA and gDNA AA_seq together and just create one liver and heart specific library? **DONE**
+5. create tissue and extraction specific library with frameshift (+1) and calculate proportion
+6. add all tissue and extraction typical variants to sample, add frameshift (sum(count_sample)/sum(count_library)) and calculate proportion, cumulative proportion and log2_enrichment
+7. Create long table with all samples concentrated in one table (df_long_table)
+8. Create pooled table by merging all mouse_ID together and calculate mean log2_enrichment and in how many samples each variant is present
+9. Save all the tables
 
 ## Script for plots
 1. Comparison between input and samples regarding proportion
@@ -40,6 +41,10 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 6. AA position specific log2_enrichment
 - maybe
+
+99. Suplement Figures
+- Correlation between raw input library and tissue specific libraries
+- 
 
 ## Script for technical replicates
 1. Create lists
