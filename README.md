@@ -14,12 +14,12 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
     - [x] Change it to libraries that are tissue specific by merging cDNA and gDNA AA_seq
 5. [x] add all tissue specific variants to sample, add frameshift (sum(count_sample)/sum(count_library)) and calculate proportion, cumulative proportion and log2_enrichment
 6. [x] Create long table with all samples concentrated in one table (df_long_all_samples)
-    - [x]Calculate Log2_enrichment_gDNA_to_cDNA (for chapter 4)
+    - [x] Calculate Log2_enrichment_gDNA_to_cDNA (for chapter 4)
 8. [x] Create pooled table by merging all mouse_ID together and
-    - [x]calculate mean log2_enrichment
-    - [x]calculate mean Proportion
-    - [x]calculate mean Log2_enrichment_gDNA_to_cDNA
-    - [x]track in how many samples the variant is present 
+    - [x] calculate mean log2_enrichment
+    - [x] calculate mean Proportion
+    - [x] calculate mean Log2_enrichment_gDNA_to_cDNA
+    - [x] track in how many samples the variant is present 
 10. [x] Create Pivot Table with all enrichment and proportion values
 11. [x] Save all the tables
 
@@ -29,17 +29,20 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 1. [x] Create lists
 2. [x] Load tables
     - [x] raw library
+        - [x] maybe liver specific library
     - [x] technical replicates
-    - [ ] long table with biological replicates
+    - [x] long table with biological replicates
 3. [ ] Load, translate and remove AA_seq with stop_codon from samples
-- [ ] with old read out script
-- [ ] save raw AA tables
-4. [ ] Create tissue and gDNA/cDNA specific input library with frameshift +1
-5. [ ] Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
-6. [ ] Create long table of technical replicates and combine with biological replicates
-    - [ ] Add column 'replicate' to mark if sample is a biological or technical replicate
-    - [ ] change it to Replicate
-7. [ ] Save technical replicates and long table with biological and technical replicates
+- [x] with old read out script
+- [x] save raw AA tables
+4. [x] Create tissue specific input library with frameshift +1
+5. [x] Calculate proportion and log2_enrichment for samples with frameshift + (sum(count_sample)/sum(count_input))
+6. [x] Create long table of technical replicates and combine with biological replicates
+    - [x] Add column 'replicate' to mark if sample is a biological or technical replicate
+    - [x] change it to Replicate
+7. [ ] Save tables
+    - [x] technical replicates
+    - [x] long table with biological and technical replicates
 
 
 ## Script for plots
@@ -73,7 +76,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
         - [ ] liver
         - [ ] heart
     - [ ] violin plot of correlations (technical rep | biological rep | sex)
-    - [ ] Leave one out scatter plot (shows that noice can be reduced by averaging)
+    - [ ] Leave one out scatter plot (shows that noise can be reduced by averaging)
     - [ ] Randomize one mouse and use it in correlation matrix
 
    
