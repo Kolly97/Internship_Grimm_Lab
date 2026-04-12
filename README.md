@@ -32,7 +32,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
         - [x] maybe liver specific library
     - [x] technical replicates
     - [x] long table with biological replicates
-3. [ ] Load, translate and remove AA_seq with stop_codon from samples
+3. [x] Load, translate and remove AA_seq with stop_codon from samples
 - [x] with old read out script
 - [x] save raw AA tables
 4. [x] Create tissue specific input library with frameshift +1
@@ -40,7 +40,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 6. [x] Create long table of technical replicates and combine with biological replicates
     - [x] Add column 'replicate' to mark if sample is a biological or technical replicate
     - [x] change it to Replicate
-7. [ ] Save tables
+7. [x] Save tables
     - [x] technical replicates
     - [x] long table with biological and technical replicates
 
