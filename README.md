@@ -84,4 +84,16 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 7. [ ] AA position specific log2_enrichment
     -[ ] maybe
 
+## Writing the Report
+1. [x] Title page
+2. [ ] Abstract
+   - [ ] First draft
+3. [ ] Introduction
+   - [ ] First draft
+4. [x] Materials & Methods
+    - [!] d
+    - [-] ss
+    - [~] sd
+    - [?] sf
+    - [ ]  
 
