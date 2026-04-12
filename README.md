@@ -1,7 +1,8 @@
 # Internship_Grimm_Lab
 Author: Kolja Hildenbrand
 
-Date: 01/04/2026
+Created: 2026-04-01
+Last Update: 2026-04-12
 
 Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualization. Collection of all code, script, tables and figures for internship. 
 
@@ -161,8 +162,11 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 
 
-### Emojis:
+## Emojis:
+[ ] = ToDo
 [x] = done
 ⏳ = in progress
+
 ⚠️ = needs review
+
 ❓ = open question
