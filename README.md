@@ -51,22 +51,32 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 1. [x] Comparison between input and samples regarding proportion
     - [x] Histogram with am propurtion with Hue = Sample
     - [x] ECDF with samples and input
-        - [ ] refine code 
+        - [ ] ⏳ refine code
+        - [ ] ❓ Mean or median for axline?
     - [x] Venn2 Input vs mean proportion in sample
         - [x] df_pooled umschreiben, damit ich auch pooled proportion habe
+    - [ ] Rank shift proportion input library -> gDNA -> cDNA
 
 2. [x] Comparison between biological replicates in enrichment
     - [x] ECDF plot
+        - [ ] ❓ Mean or median for axline?
+        - [ ] ❓ Should I use with or without Pseudo? (Pseudo adds a log of varients with enrichment < 0)
 
 3. [ ] Comparison functional selection between RNA and DNA samples
-    - [ ] Violin plot mean between biological replicate
-    - [ ] KDE plot for liver and heart (DNA and RNA in one plot, x = enrichment, y = n variant)
+    - [x] ⏳ Violin plot mean between biological replicate (*2024-04-13*)
+        - [ ] ❓ Variants in mind how many samples? ASK SABRINA
+    - [x] KDE plot for liver and heart (DNA and RNA in one plot, x = enrichment, y = n variant) (*2024-04-13*)
+        - [ ] ❓ Variants in mind how many samples? ASK SABRINA
+    - [ ] Rank shift gDNA vs cDNA (maybe similar rank shift between tissues. shows that gDNA -> cDNA is a similar step and shows the same selectivity)
+        - [ ] maybe it's more clearly with AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues?
     - [ ] Venn2 plot with top 10000 enrichment
         - [ ] to show already the selection difference between biological step and tissue
     - [ ] Diagramm of Venn2 plot overlap between top 1 and top 10^6
 
-4. [ ] Plots for enrichment between DNA to RNA?
-   - [ ] ask Sabrina if she thinks this is relevant
+4. [ ] Log2 enrichment from gDNA level to cDNA level
+       - [ ] ask Sabrina if this is relevant
+   - [x] ECDF plot of enrichment for liver and heart (*2024-04-13*)
+   - [ ] ❓ AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues (compare to show if there are specific motifs, that are good for transcription)
 
 5. [ ] Validation of reproducibility between biological and technical replicates
     - [ ] Scatter plot
@@ -145,6 +155,19 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 ## Progress Log 
 
 ### 2026-04-12
+- [x] Change save methode of pivot table in table prep script (by creating df_wide and reset index)
+- [ ] Result chapter 3
+    - [x] Violin plot mean between biological replicate
+    - [x] KDE plot for liver and heart (DNA and RNA in one plot, x = enrichment, y = n variant)
+    - [ ] Venn2 plot with top 10000 enrichment
+    - [ ] Diagramm of Venn2 plot overlap between top 1 and top 10^6 in log2 steps? (2,4,8,16,32,64,...)
+- [x] Result chapter 4
+    - [x] ECDF plot of enrichment for liver and heart
+- [x]  Update ReadMe with all needed plot
+- [x]  Update plot script with all figures I want to create
+
+
+### 2026-04-12
 - [x] Create script for ECDF plot of proportion and Log2_enrichment
 - [x] Change input library from extraction and tissue specific to only tissue specific
 - [x] Re-calculate all samples of biological replicates
@@ -164,7 +187,9 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 ## Emojis:
 [ ] = ToDo
+
 [x] = done
+
 ⏳ = in progress
 
 ⚠️ = needs review
