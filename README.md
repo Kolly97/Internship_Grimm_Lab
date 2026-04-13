@@ -154,7 +154,11 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 ## Progress Log 
 
-### 2026-04-12
+### 2026-04-14
+- [x] Check for 4.5.1. to change it from no_pseudo to n_pseudo
+
+
+### 2026-04-13
 - [x] Change save methode of pivot table in table prep script (by creating df_wide and reset index)
 - [ ] Result chapter 3
     - [x] Violin plot mean between biological replicate
