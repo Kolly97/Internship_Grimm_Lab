@@ -67,11 +67,12 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
         - [ ] ❓ Variants in mind how many samples? ASK SABRINA
     - [x] KDE plot for liver and heart (DNA and RNA in one plot, x = enrichment, y = n variant) (*2024-04-13*)
         - [ ] ❓ Variants in mind how many samples? ASK SABRINA
+    - [x] Venn2 plot with top 10000 enrichment
+        - [x] to show already the selection difference between biological step and tissue
+        - [x] Shows in my opinion strong selection
+    - [x] Diagramm of Venn2 plot overlap between top 1 and top 10^6
     - [ ] Rank shift gDNA vs cDNA (maybe similar rank shift between tissues. shows that gDNA -> cDNA is a similar step and shows the same selectivity)
         - [ ] maybe it's more clearly with AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues?
-    - [ ] Venn2 plot with top 10000 enrichment
-        - [ ] to show already the selection difference between biological step and tissue
-    - [ ] Diagramm of Venn2 plot overlap between top 1 and top 10^6
 
 4. [ ] Chapter 4: Log2 enrichment from gDNA level to cDNA level
        - [ ] ask Sabrina if this is relevant
@@ -90,9 +91,13 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
     - [ ] Leave one out scatter plot (shows that noise can be reduced by averaging)
     - [ ] Randomize one mouse and use it in correlation matrix
 
+6. [ ] Chapter 6: Getting a feeling for library
+    - [ ] Column plot of variant number for just in 0 tissue -> in 6 tissue
+    - [ ] Boxplot distribution of enrichment in variants present in different amount of samples
+    - [ ] 
    
 
-7. [ ] AA position specific log2_enrichment
+8. [ ] AA position specific log2_enrichment
     - [ ] maybe
 
 ## Writing the Report
@@ -155,7 +160,8 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 ## Progress Log 
 
 ### 2026-04-14
-- [ ] Check for 4.5.1. to change it from no_pseudo to n_pseudo
+- [x] Check for 4.5.1. to change it from no_pseudo to n_pseudo
+    - [x] Not important since it uses proportion (notLog2_enrichment) and df_long
 - [ ] Result chapter 3
     - [ ] Venn2 plot with top 10000 enrichment
     - [ ] Diagramm of Venn2 plot overlap between top 1 and top 10^6 in log2 steps? (2,4,8,16,32,64,...)
