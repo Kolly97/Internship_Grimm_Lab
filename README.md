@@ -49,7 +49,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
     - [x] long table with biological and technical replicates
 
 
-## Script for plots
+## Script for figures
 
 1. [x] Chapter 1: Comparison between input and samples regarding proportion
     - [x] Histogram with am propurtion with Hue = Sample
