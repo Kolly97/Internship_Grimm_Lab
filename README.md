@@ -9,12 +9,14 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 ## Script for table preparation
 
 1. [x] load csv tables
-2. [x] translate Peptides -> AA_seq 
-3. [x] create list of all variants which are present in all samples in the same tissue
-4. [x] create tissue specific library with frameshift (+1) and calculate proportion
+2. [x] translate Peptides -> AA_seq
+    - [x] remove AA_seq with stop Codon
+    - [ ] ❓ what should I do with AA = X (unknown AA)
+4. [x] create list of all variants which are present in all samples in the same tissue
+5. [x] create tissue specific library with frameshift (+1) and calculate proportion
     - [x] Change it to libraries that are tissue specific by merging cDNA and gDNA AA_seq
-5. [x] add all tissue specific variants to sample, add frameshift (sum(count_sample)/sum(count_library)) and calculate proportion, cumulative proportion and log2_enrichment
-6. [x] Create long table with all samples concentrated in one table (df_long_all_samples)
+6. [x] add all tissue specific variants to sample, add frameshift (sum(count_sample)/sum(count_library)) and calculate proportion, cumulative proportion and log2_enrichment
+7. [x] Create long table with all samples concentrated in one table (df_long_all_samples)
     - [x] Calculate Log2_enrichment_gDNA_to_cDNA (for chapter 4)
 8. [x] Create pooled table by merging all mouse_ID together and
     - [x] calculate mean log2_enrichment
@@ -23,6 +25,7 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
     - [x] track in how many samples the variant is present 
 10. [x] Create Pivot Table with all enrichment and proportion values
 11. [x] Save all the tables
+
 
 
 ## Script for technical replicates
@@ -71,13 +74,14 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
         - [x] to show already the selection difference between biological step and tissue
         - [x] Shows in my opinion strong selection
     - [x] Diagramm of Venn2 plot overlap between top 1 and top 10^6
-    - [ ] Rank shift gDNA vs cDNA (maybe similar rank shift between tissues. shows that gDNA -> cDNA is a similar step and shows the same selectivity)
-        - [ ] maybe it's more clearly with AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues?
+    - [x] Rank shift gDNA vs cDNA (maybe similar rank shift between tissues. shows that gDNA -> cDNA is a similar step and shows the same selectivity)
+        - [x] ❓ maybe it's more clearly with AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues?
+        - [ ] ❓ maybe seperate for eaxh mouse ID instead of using df_pool?
 
 4. [ ] Chapter 4: Log2 enrichment from gDNA level to cDNA level
        - [ ] ask Sabrina if this is relevant
    - [x] ECDF plot of enrichment for liver and heart (*2024-04-13*)
-   - [ ] ❓ AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues (compare to show if there are specific motifs, that are good for transcription)
+   - [x] ❓ AA_position heatmap for Log2_enrichment_gDNA_to_cDNA for both tissues (compare to show if there are specific motifs, that are good for transcription)
 
 5. [ ] Chapter 5: Validation of reproducibility between biological and technical replicates
     - [ ] Scatter plot
@@ -159,12 +163,15 @@ Progress of bioinformatic analysis of AAV6-ML NGS data processing and visualizat
 
 ## Progress Log 
 
+
 ### 2026-04-14
 - [x] Check for 4.5.1. to change it from no_pseudo to n_pseudo
     - [x] Not important since it uses proportion (notLog2_enrichment) and df_long
-- [ ] Result chapter 3
-    - [ ] Venn2 plot with top 10000 enrichment
-    - [ ] Diagramm of Venn2 plot overlap between top 1 and top 10^6 in log2 steps? (2,4,8,16,32,64,...)
+- [x] Result chapter 3
+    - [x] Venn2 plot with top 10000 enrichment
+    - [x] Diagramm of Venn2 plot overlap between top 1 and top 10^6 in log2 steps? (2,4,8,16,32,64,...)
+    - [x] Rank_shift Log2_enrichment between gDNA and cDNA
+    - [x] Heatmap of AA Position that influences log2_enrichment from gDNA to cDNA
  - [ ] Result Chapter 5
     - [ ] Scatter plot
         - [ ] Biological replicates
