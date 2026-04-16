@@ -14,18 +14,18 @@ Last Update:
 ## Chapter 2: AAV6 Frequency changes indicates tissue and process specific in vivo selection 
 - [x] Histogram with hue = Mouse ID
 - [x] Venn2 of top 10000 Proportion in pooled sample and input library
-    - [ ] vllt mit Rankshift ersetzen
-- [ ] Rank shift proportion input library -> gDNA -> cDNA
+    - [x] vllt mit Rankshift ersetzen
+- [x] Rank shift proportion input library -> gDNA -> cDNA
 
 ## Chapter 2.5: Data coverage and variant representation across samples
-- [ ] Column plot of variant numbers that are in 0 samples, 1 samples, ..., 6 samples) (all in one plot)
-    - [ ] gDNA_liver
-    - [ ] cDNA_liver
-    - [ ] gDNA_heart
-    - [ ] cDNA_heart
-- [ ] Boxplot distribution of enrichment in variants present in different amount of samples
+- [x] Column plot of variant numbers that are in 0 samples, 1 samples, ..., 6 samples) (all in one plot)
+    - [x] gDNA_liver
+    - [x] cDNA_liver
+    - [x] gDNA_heart
+    - [x] cDNA_heart
+- [x] Boxplot distribution of enrichment in variants present in different amount of samples
 
-## Chapter 3: RNA-level enrichment reflects stronger functional selection compared to DNA**
+## Chapter 3: RNA-level enrichment reflects stronger functional selection compared to DNA
 - [x] Violin Plot between different tissues and extraction
 - [x] KDE plot one per tissue, comparison gDNA vs cDNA
     - [ ] sagt eigentlich das selbe wie violin plot aus nur anschaulicher aber wenger statistic
@@ -37,11 +37,11 @@ Last Update:
     - [ ]  A = mean(log2_enrichment_cDNA, log2_enrichment_gDNA)
 
 ## Chapter 4: Validation of reproducibility across technical and biological replicates
-- [ ] Scatter plot example
-    - [ ] Technical replicate (liver_m2 (technical rep specific library) vs liver_PCR)
-    - [ ] Biological replicate (m2 vs m1)
-    - [ ] sex against each other (male vs female)
-- [ ] sns Clustermap liver (maybe liver and heart together? But could be to crowded?)
+- [x] Scatter plot example
+    - [x] Technical replicate (liver_m2 (technical rep specific library) vs liver_PCR)
+    - [x] Biological replicate (m2 vs m1)
+    - [x] sex against each other (male vs female)
+- [ ] sns Heatmap  (maybe liver and heart together? But could be to crowded?)
     - [ ] gDNA
         - [ ] technical replicates 
         - [ ] biological replicates
@@ -55,15 +55,15 @@ Last Update:
 
 
 ## Chapter 5: Amino Acid specific position specific Log2_enrichment 
-- [ ] AA-position Heatmap Input -> gDNA
-    - [ ] liver
-    - [ ] heart
-- [ ] AA-position Heatmap Input -> cDNA
-    - [ ] liver
-    - [ ] heart
+- [x] AA-position Heatmap Input -> gDNA
+    - [x] liver
+    - [x] heart
+- [x] AA-position Heatmap Input -> cDNA
+    - [x] liver
+    - [x] heart
 - [ ] AA-position Heatmap gDNA -> cDNA
-    - [ ] liver
-    - [ ] heart
+    - [x] liver
+    - [x] heart
 - [ ] For supplementary figures heatmap of each mouse ID
   
 
