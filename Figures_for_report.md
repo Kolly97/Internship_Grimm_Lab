@@ -24,6 +24,7 @@ Last Update:
     - [x] gDNA_heart
     - [x] cDNA_heart
 - [x] Boxplot distribution of enrichment in variants present in different amount of samples
+- [ ] Boxplot for counts per n_sample 0 - 6 (maybe I can see, that the variance is much better vor n >= 2)
 
 ## Chapter 3: RNA-level enrichment reflects stronger functional selection compared to DNA
 - [x] Violin Plot between different tissues and extraction
