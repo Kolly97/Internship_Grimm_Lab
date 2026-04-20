@@ -12,6 +12,7 @@ Last Update:
 ### 2026-04-21
 - [ ] Technical tables calculation and adding to df_long
 - [ ] Divide scipt_plots files in to each chapter to hold it a little bit less growded
+- [ ] extra table for long_sample, long_mouse_ID 
 
 
 - [ ] Figures immer in 3 Ausführungsarten
