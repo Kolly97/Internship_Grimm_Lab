@@ -9,18 +9,48 @@ Last Update:
 
 ## Progress Log 
 
-### 2026-04-17
+### 2026-04-21
+- [ ] Technical tables calculation and adding to df_long
+- [ ] Divide scipt_plots files in to each chapter to hold it a little bit less growded
+
+
+- [ ] Figures immer in 3 Ausführungsarten
+1. raw
+2. n_samples at least 2
+3. RPM filter bei 0.1 RPM
+
+**Plots**
+- [ ] counts/RPM vs n_samples_present als boxplot von neuer df_pooled_log_of_mean
+- [ ] df_pooled vs df_pooled_log_of_mean scatter plot
+- [ ] neue AA-position Heatmap
+    - [ ] mean(log2) aber mit filter n_sample >= 2
+    - [ ] mit neuem df_pooled_log_of_mean
+        - [ ] mit n_sample >= 2 filter
+        - [ ] ohne filter
+ - [ ] noise vs abundance Plot bauen
+    - x = abundance / RPM / count
+    - y = variability / replicate difference
+    - prüfen, ob low-abundance Varianten klar noisier sind
+
+
+
 - [ ] Corr matrix (Sample -> Mouse_ID -> Sex) (sns.clustermap?)
-    - [ ] Started but looks very bad. Have to chekck tomorrow
+    - [ ] Started but looks very bad. Have to check tomorrow
         - [ ] liver
         - [ ] heart
     - [ ] violin plot of correlations (technical rep | biological rep | sex)
     - [ ] Leave one out scatter plot (shows that noise can be reduced by averaging)
     - [ ] Randomize one mouse and use it in correlation matrix
-- [ ] MA-plot for sex
-    - [ ] liver
-    - [ ] heart
 
+### 2026-04-20
+**Table preperation**
+- [x] neue df_pooled_log_of_mean mit log2(mean RPM ratio)
+- [x] neue df_pooled_sex mit log2(mean RPM ratio)
+- [x] Log2_enrichment_old beibehalten zum vergleichen#
+- [x] Compare new Log2_enrichment to Log2_enrichment_old
+- [x] save new tables for figures
+
+          
 ### 2026-04-16      
 - [x] Chapter 1: Rank shift proportion input library -> gDNA -> cDNA
     - [x] first calculating rank shift for each variant and than taking the mean of the rank
@@ -30,7 +60,7 @@ Last Update:
 
 
 ### 2026-04-15
- - [ ] Result Chapter 5
+ - [x] Result Chapter 5
     - [x] Scatter plot
         - [x] Biological replicates
         - [x] Technical replicates
