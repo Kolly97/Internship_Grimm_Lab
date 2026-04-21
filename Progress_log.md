@@ -3,26 +3,20 @@ Author: Kolja Hildenbrand
 
 Created: 2026-04-16
 
-Last Update: 
+Last Update: 2026-04-21
 
 
 
 ## Progress Log 
 
-### 2026-04-21
-- [ ] Technical tables calculation and adding to df_long
-- [ ] Divide scipt_plots files in to each chapter to hold it a little bit less growded
-- [ ] extra table for long_sample, long_mouse_ID 
 
-
+### 2026-04-22
 - [ ] Figures immer in 3 Ausführungsarten
 1. raw
 2. n_samples at least 2
 3. RPM filter bei 0.1 RPM
 
 **Plots**
-- [ ] counts/RPM vs n_samples_present als boxplot von neuer df_pooled_log_of_mean
-- [ ] df_pooled vs df_pooled_log_of_mean scatter plot
 - [ ] neue AA-position Heatmap
     - [ ] mean(log2) aber mit filter n_sample >= 2
     - [ ] mit neuem df_pooled_log_of_mean
@@ -33,8 +27,6 @@ Last Update:
     - y = variability / replicate difference
     - prüfen, ob low-abundance Varianten klar noisier sind
 
-
-
 - [ ] Corr matrix (Sample -> Mouse_ID -> Sex) (sns.clustermap?)
     - [ ] Started but looks very bad. Have to check tomorrow
         - [ ] liver
@@ -42,6 +34,17 @@ Last Update:
     - [ ] violin plot of correlations (technical rep | biological rep | sex)
     - [ ] Leave one out scatter plot (shows that noise can be reduced by averaging)
     - [ ] Randomize one mouse and use it in correlation matrix
+
+          
+### 2026-04-21
+- [x] Technical tables calculation and adding to df_long
+- [x] Divide script_plots files in to each chapter to hold it a little bit less growded
+- [x] extra table for long_sample, long_mouse_ID 
+- [x] counts/RPM vs n_samples_present als boxplot von neuer df_pooled_log_of_mean
+    - [ ] um es mit Counts zu machen muss ich counts in fd_pooled mitführen
+- [x] df_pooled vs df_pooled_log_of_mean scatter plot
+    - [ ] muss ich noch speichern
+    - [ ] sehen sehr unterschiedlich aus
 
 ### 2026-04-20
 **Table preperation**
