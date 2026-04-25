@@ -9,12 +9,22 @@ Last Update: 2026-04-21
 
 ## Progress Log 
 
-
-### 2026-04-22
-- [ ] Figures immer in 3 Ausführungsarten
-1. raw
-2. n_samples at least 2
-3. RPM filter bei 0.1 RPM
+## 2026-04-26
+- [ ] Randomize one mouse and use it in correlation matrix   
+- [ ] Chapter 5
+    - [ ] Figures immer in 3 Ausführungsarten
+    1. raw
+    2. n_samples at least 2
+    3. RPM filter bei 0.1 RPM
+    - [x] AA-position Heatmap Input -> gDNA
+        - [x] liver
+        - [x] heart
+    - [x] AA-position Heatmap Input -> cDNA
+        - [x] liver
+        - [x] heart
+    - [ ] AA-position Heatmap gDNA -> cDNA
+        - [x] liver
+        - [x] heart
 
 **Plots**
 - [ ] neue AA-position Heatmap
@@ -27,15 +37,42 @@ Last Update: 2026-04-21
     - y = variability / replicate difference
     - prüfen, ob low-abundance Varianten klar noisier sind
 
-- [ ] Corr matrix (Sample -> Mouse_ID -> Sex) (sns.clustermap?)
-    - [ ] Started but looks very bad. Have to check tomorrow
-        - [ ] liver
-        - [ ] heart
-    - [ ] violin plot of correlations (technical rep | biological rep | sex)
-    - [ ] Leave one out scatter plot (shows that noise can be reduced by averaging)
-    - [ ] Randomize one mouse and use it in correlation matrix
 
-          
+### 2026-04-25
+- [x] Corr matrix (Sample -> Mouse_ID -> Sex) (sns.clustermap?)
+    - [x] liver
+        - [x] gDNA
+            - [x] technical
+            - [x] biological
+            - [x] sex
+        - [x] cDNA
+            - [x] technical
+            - [x] biological
+            - [x] sex
+    - [x] heart
+        - [x] gDNA
+            - [x] biological
+            - [x] sex
+        - [x] cDNA
+            - [x] biological
+            - [x] sex
+    - [x] box plot of correlations (technical rep | biological rep | sex)
+    - [x] Leave one out scatter plot (shows that noise can be reduced by averaging)
+        - [x] gDNA liver f2
+        - [x] cDNA liver f2
+        - [x] boxplot correlation of biological corr and leave one out correlation
+
+### 2026-04-22
+- [x] pooled sex has worse correlation with log2(mean(RPM_sample)/mean(RPM_input)) compared to mean(log2_enrichment)
+- [x] Chapter 2.5 updated figures 
+- [x] Chapter 3 updated figures
+    - [ ] created new ECDF plot for Log2_enrichment_gDNA_to_cDNA
+- [x] Chapter 4 figures
+    - [x] Scatter plot
+        - [x] Biological replicates
+        - [x] Technical replicates
+        - [x] Sex
+                  
 ### 2026-04-21
 - [x] Technical tables calculation and adding to df_long
 - [x] Divide script_plots files in to each chapter to hold it a little bit less growded
