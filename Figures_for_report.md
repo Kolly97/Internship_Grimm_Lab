@@ -24,7 +24,8 @@ Last Update:
     - [x] gDNA_heart
     - [x] cDNA_heart
 - [x] Boxplot distribution of enrichment in variants present in different amount of samples
-- [ ] Boxplot for counts per n_sample 0 - 6 (maybe I can see, that the variance is much better vor n >= 2)
+- [x] Boxplot for RPM per n_sample 0 - 6 (maybe I can see, that the variance is much better vor n >= 2)
+    - [x] yes it seems like all variants below this line are to much influenced by pseudo measurments
 
 ## Chapter 3: RNA-level enrichment reflects stronger functional selection compared to DNA
 - [x] Violin Plot between different tissues and extraction
@@ -33,26 +34,27 @@ Last Update:
     - [ ] Streichen?
 - [x]  Venn2 of top 10,000 Log enrichment in min 2 samples
 - [x]  Venn2 digramm from top 2 to top max variants
-- [ ]  MA plot per tissue (for one mouse?)
-    - [ ]  M = log2_enrichment_cDNA - log2_enrichment_gDNA
-    - [ ]  A = mean(log2_enrichment_cDNA, log2_enrichment_gDNA)
+- [x]  ECDF plot for Log2_enrichment_gDNA_to_cDNA
+- [ ]  correlation proportion with input?
+
 
 ## Chapter 4: Validation of reproducibility across technical and biological replicates
 - [x] Scatter plot example
     - [x] Technical replicate (liver_m2 (technical rep specific library) vs liver_PCR)
     - [x] Biological replicate (m2 vs m1)
     - [x] sex against each other (male vs female)
-- [ ] sns Heatmap  (maybe liver and heart together? But could be to crowded?)
-    - [ ] gDNA
-        - [ ] technical replicates 
-        - [ ] biological replicates
-        - [ ] sex replicates
-    - [ ] cDNA
-        - [ ] technical replicates 
-        - [ ] biological replicates
-        - [ ] sex replicates
-- [ ] violin plot for correlation of gDNA (technical, biological, sex)
-- [ ] violin plot for correlation of cDNA (technical, biological, sex)
+- [x] sns Heatmap  (maybe liver and heart together? But could be to crowded?)
+    - [x] gDNA
+        - [x] technical replicates
+            - [x] corr with liver_origin_rep compared to liver_m2 is just a little bit better for gDNA and the same for cDNA
+        - [x] biological replicates
+        - [x] sex replicates
+    - [x] cDNA
+        - [x] technical replicates 
+        - [x] biological replicates
+        - [x] sex replicates
+- [x] violin plot for correlation of gDNA (technical, biological, sex)
+- [x] violin plot for correlation of cDNA (technical, biological, sex)
 
 
 ## Chapter 5: Amino Acid specific position specific Log2_enrichment 
@@ -74,8 +76,9 @@ Last Update:
     - [ ]  y = variance oder |rep1 – rep2| oder std across replicates
     - [ ]  Aussage: Variants with low abundance exhibit substantially higher variability, demonstrating that sequencing noise is strongly dependent on signal strength.
           
-- [ ] Noise reduction by averaging (leave-one-out) (scatter plot)
-    - [ ] Aussage: Averaging across biological replicates reduces stochastic noise and increases reproducibility of enrichment estimates.
+- [x] Noise reduction by averaging (leave-one-out) (scatter plot)
+    - [x] Aussage: Averaging across biological replicates reduces stochastic noise and increases reproducibility of enrichment estimates.
+- [x] boxplot of correlation for biological vs. leave-one-out
 
 - [ ] Randomize one mouse and use it in correlation matrix (f1)
     - [ ] Null model (shuffled correlation)
@@ -93,8 +96,6 @@ Last Update:
         - [ ] sex (optional)
     - [ ] Aussage: Increasing filtering stringency (removal of pseudo-supported variants) improves correlation between replicates, indicating that low-confidence variants contribute disproportionately to noise.
 
-- [ ] subsampling correlation
-    - [ ] liver cDNA m1 vs m2 plot prozent daten 1% -> 100 % schauen was correlation und plotten
 
 
 Chapter 1 – Transduction & QC
