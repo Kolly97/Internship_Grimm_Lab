@@ -1,42 +1,55 @@
+Chapter 5 is old Chapter 6
+- created leave one out scatter plots
+- created boxplot for leave one out for diff samples
+- corr heatmap of randomized mouse
+
+
 # Progress Log for Internship in AG Grimm
 Author: Kolja Hildenbrand
 
 Created: 2026-04-16
 
-Last Update: 2026-04-21
+Last Update: 2026-04-27
 
 
 
 ## Progress Log 
 
+## 2026-04-28
+Chapter 6
+- [ ] Figures immer in 3 Ausführungsarten
+1. raw
+2. n_samples at least 2
+3. RPM filter bei 0.1 RPM
+- [ ] AA-position Heatmap Input -> gDNA
+    - [ ] liver
+    - [ ] heart
+- [ ] AA-position Heatmap Input -> cDNA
+    - [ ] liver
+    - [ ] heart
+- [ ] AA-position Heatmap gDNA -> cDNA
+    - [ ] liver
+    - [ ] heart
+
+## 2026-04-27
+Chapter 5
+- [x]  Noise vs Abundance scatter (log - log)
+    - [x]  x = mean abundance (z.B. input proportion oder mean counts)
+    - [x]  y = variance oder |rep1 – rep2| oder std across replicates
+    - [ ]  Aussage: Variants with low abundance exhibit substantially higher variability, demonstrating that sequencing noise is strongly dependent on signal strength.
+
+Chapter 3
+- [x] rankshift scatter plot proportion with input?
+    - [x] input -> gDNA
+    - [x] input -> cDNA
+    - [ ] maybe Proportion rankshift gDNA -> cDNA?
+
 ## 2026-04-26
-- [ ] Randomize one mouse and use it in correlation matrix   
-- [ ] Chapter 5
-    - [ ] Figures immer in 3 Ausführungsarten
-    1. raw
-    2. n_samples at least 2
-    3. RPM filter bei 0.1 RPM
-    - [x] AA-position Heatmap Input -> gDNA
-        - [x] liver
-        - [x] heart
-    - [x] AA-position Heatmap Input -> cDNA
-        - [x] liver
-        - [x] heart
-    - [ ] AA-position Heatmap gDNA -> cDNA
-        - [x] liver
-        - [x] heart
-
-**Plots**
-- [ ] neue AA-position Heatmap
-    - [ ] mean(log2) aber mit filter n_sample >= 2
-    - [ ] mit neuem df_pooled_log_of_mean
-        - [ ] mit n_sample >= 2 filter
-        - [ ] ohne filter
- - [ ] noise vs abundance Plot bauen
-    - x = abundance / RPM / count
-    - y = variability / replicate difference
-    - prüfen, ob low-abundance Varianten klar noisier sind
-
+- [x] Chapter 5
+    - [x] Randomize one mouse and use it in correlation matrix
+    - [x] boxplot for randomized mouse
+    - [x] Updated boxplot of leave one out vs biological
+        - [x] excluded technical sample merge from liver samples 
 
 ### 2026-04-25
 - [x] Corr matrix (Sample -> Mouse_ID -> Sex) (sns.clustermap?)
