@@ -29,14 +29,14 @@ Last Update:
 
 ## Chapter 3: RNA-level enrichment reflects stronger functional selection compared to DNA
 - [x] Violin Plot between different tissues and extraction
-- [x] KDE plot one per tissue, comparison gDNA vs cDNA
-    - [ ] sagt eigentlich das selbe wie violin plot aus nur anschaulicher aber wenger statistic
-    - [ ] Streichen?
+    - [ ] muss ich nochmal mit mean (log2_enrichment) machen
+
 - [x]  Venn2 of top 10,000 Log enrichment in min 2 samples
 - [x]  Venn2 digramm from top 2 to top max variants
 - [x]  ECDF plot for Log2_enrichment_gDNA_to_cDNA
-- [ ]  correlation proportion with input?
+- [ ]  correlation oder rankshift proportion with input?
 
+- [x] KDE plot one per tissue, comparison gDNA vs cDNA
 
 ## Chapter 4: Validation of reproducibility across technical and biological replicates
 - [x] Scatter plot example
@@ -56,45 +56,34 @@ Last Update:
 - [x] violin plot for correlation of gDNA (technical, biological, sex)
 - [x] violin plot for correlation of cDNA (technical, biological, sex)
 
-
-## Chapter 5: Amino Acid specific position specific Log2_enrichment 
-- [x] AA-position Heatmap Input -> gDNA
-    - [x] liver
-    - [x] heart
-- [x] AA-position Heatmap Input -> cDNA
-    - [x] liver
-    - [x] heart
-- [ ] AA-position Heatmap gDNA -> cDNA
-    - [x] liver
-    - [x] heart
-- [ ] For supplementary figures heatmap of each mouse ID
-  
-
-## Chapter 6: Validation of correlation and detecting of noise
-- [ ]  Noise vs Abundance scatter (log - log)
-    - [ ]  x = mean abundance (z.B. input proportion oder mean counts)
-    - [ ]  y = variance oder |rep1 – rep2| oder std across replicates
-    - [ ]  Aussage: Variants with low abundance exhibit substantially higher variability, demonstrating that sequencing noise is strongly dependent on signal strength.
+## Chapter 5: Validation of correlation and detecting of noise
+- [x]  Noise vs Abundance scatter (log - log)
+    - [x]  x = mean abundance (z.B. input proportion oder mean counts)
+    - [x]  y = variance oder |rep1 – rep2| oder std across replicates
+    - [x]  Aussage: Variants with low abundance exhibit substantially higher variability, demonstrating that sequencing noise is strongly dependent on signal strength.
+    - [ ]  Have to check what I am blotting and to make sure, that I use /RPM for cv
           
 - [x] Noise reduction by averaging (leave-one-out) (scatter plot)
     - [x] Aussage: Averaging across biological replicates reduces stochastic noise and increases reproducibility of enrichment estimates.
 - [x] boxplot of correlation for biological vs. leave-one-out
 
-- [ ] Randomize one mouse and use it in correlation matrix (f1)
-    - [ ] Null model (shuffled correlation)
-    - [ ] Scatter (real vs shuffled) + Histogram/Distribution of r
-    - [ ] Shuffle Log2_enrichment innerhalb eines Samples (z. B. F1)
-    - [ ] distribution of R über mehrere shuffel?
-    - [ ] Aussage: Observed correlations are significantly higher than expected by random association, confirming that measured signals are biologically meaningful and not driven by noise.
-        
-- [ ] Correlation vs Pseudo Threshold (line-plot)
-    - [ ] x: pseudo threshold (0,1,2,…)
-    - [ ] y: Pearson r
-    - [ ] getrennt für:
-        - [ ] technical 
-        - [ ] biological
-        - [ ] sex (optional)
-    - [ ] Aussage: Increasing filtering stringency (removal of pseudo-supported variants) improves correlation between replicates, indicating that low-confidence variants contribute disproportionately to noise.
+- [x] Randomize one mouse and use it in correlation matrix (f1)
+    - [x] Null model (shuffled correlation)
+    - [x] Shuffle Log2_enrichment innerhalb eines Samples (z. B. F1)
+    - [x] distribution of R über mehrere shuffel?
+    - [x] Aussage: Observed correlations are significantly higher than expected by random association, confirming that measured signals are biologically meaningful and not driven by noise.
+
+## Chapter 6: Amino Acid specific position specific Log2_enrichment 
+- [ ] AA-position Heatmap Input -> gDNA
+    - [ ] liver
+    - [ ] heart
+- [ ] AA-position Heatmap Input -> cDNA
+    - [ ] liver
+    - [ ] heart
+- [ ] AA-position Heatmap gDNA -> cDNA
+    - [ ] liver
+    - [ ] heart
+- [ ] For supplementary figures heatmap of each mouse ID
 
 
 
