@@ -9,29 +9,37 @@ Author: Kolja Hildenbrand
 
 Created: 2026-04-16
 
-Last Update: 2026-04-27
-
+Latest Update: 2026-04-28
 
 
 ## Progress Log 
 
-## 2026-04-28
-Chapter 6
-- [ ] Figures immer in 3 Ausführungsarten
-1. raw
-2. n_samples at least 2
-3. RPM filter bei 0.1 RPM
-- [ ] AA-position Heatmap Input -> gDNA
-    - [ ] liver
-    - [ ] heart
-- [ ] AA-position Heatmap Input -> cDNA
-    - [ ] liver
-    - [ ] heart
-- [ ] AA-position Heatmap gDNA -> cDNA
-    - [ ] liver
-    - [ ] heart
+### 2026-05-05
+- [ ] Adjusting figures according to meeting with Sabrina
+    - [ ] 
 
-## 2026-04-27
+### 2026-04-28
+Chapter 3
+- [x] rankshift scatter plot proportion with input?
+    - [x] input -> gDNA
+    - [x] input -> cDNA
+    - [ ] maybe Proportion rankshift gDNA -> cDNA?
+- [ ] Figures updaten with mean(log2) calculation
+    - [x] a
+    - [x] b
+    - [x] c
+    - [x] d
+
+Chapter 5
+- [ ] Figure e handlings updaten
+
+General
+- [ ] Writing figure captions
+
+
+
+
+### 2026-04-27
 Chapter 5
 - [x]  Noise vs Abundance scatter (log - log)
     - [x]  x = mean abundance (z.B. input proportion oder mean counts)
@@ -44,7 +52,7 @@ Chapter 3
     - [x] input -> cDNA
     - [ ] maybe Proportion rankshift gDNA -> cDNA?
 
-## 2026-04-26
+### 2026-04-26
 - [x] Chapter 5
     - [x] Randomize one mouse and use it in correlation matrix
     - [x] boxplot for randomized mouse
